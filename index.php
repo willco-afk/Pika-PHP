@@ -40,6 +40,22 @@
             text-align: left;
             margin-top: 20px;
         }
+        .home-btn {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 2;
+        }
+        .home-btn:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
@@ -78,5 +94,9 @@
         displaySubmissions(); // Call function to display submissions
         ?>
     </div>
+
+    <!-- Home Button -->
+    <button class="home-btn" onclick="window.location.href='https://williamc.netlify.app'">Home</button>
+
 </body>
 </html>
